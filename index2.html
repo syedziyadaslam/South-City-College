@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South City College & SCIMT | Excellence in Education Karachi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#0f172a',
+                            gold: '#f59e0b',
+                            goldHover: '#d97706',
+                            accent: '#06b6d4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom animations and styling */
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-card-dark {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-slide {
+            transition: opacity 1s ease-in-out;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e40af;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border-b border-white/10 text-xs py-2.5 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex flex-col gap-1 text-slate-300 text-center md:text-left">
+            <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>50-M, Block-6, P.E.C.H.S., Shahrah-e-Faisal, Karachi</span>
+            <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>H.E.F. Hussainabad Campus: Plot # ST 14/3, Karachi</span>
+        </div>
+        <div class="flex items-center gap-4 text-slate-300">
+            <span><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i>(021) 34545452</span>
+                <a href="tel:(021) 34545452" class="hover:text-amber-400 transition"><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i>(+92) 331 2483779</a>
+                <span class="hidden sm:inline">|</span>
+                <a href="mailto:info@southcity.edu.pk" class="hover:text-amber-400 transition"><i class="fa-solid fa-envelope text-amber-400 mr-1.5"></i>info@southcity.edu.pk</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Admissions Open 2026
+                </span>
+                <span class="bg-blue-500/10 text-blue-300 border border-blue-500/30 text-[10px] px-2 py-0.5 rounded font-medium">BIEK & Sindh Govt Affiliated</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-white/10 shadow-2xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+            <!-- College Crest Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-amber-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center overflow-hidden p-1">
+    <img src="logo.png" alt="College Logo" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block leading-none">
+                        SOUTH CITY <span class="text-amber-400 font-bold">COLLEGE</span>
+                    </span>
+                    <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-400 block mt-1">
+                        & Institute of Management & Tech (SCIMT)
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-university text-xs text-slate-500"></i> About Us</a>
+                <a href="#programs" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-xs text-slate-500"></i> Programs</a>
+                <a href="#calculator" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-calculator text-xs text-slate-500"></i> Admission / Certification</a>
+                <a href="#gallery" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-images text-xs text-slate-500"></i> Campus Life</a>
+                <a href="#director" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-user-tie text-xs text-slate-500"></i> Leadership</a>
+            </nav>
+
+            <!-- Action CTA & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <button onclick="toggleModal()" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-950 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 transition">
+                    <span class="relative z-10 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Apply Online
+                    </span>
+                    <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </button>
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-slate-900 border-b border-white/10 px-6 py-6 space-y-4">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium"><i class="fa-solid fa-university mr-2"></i> About Us</a>
+            <a href="#programs" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium"><i class="fa-solid fa-graduation-cap mr-2"></i> Programs</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium"><i class="fa-solid fa-calculator mr-2"></i> Admission / Certification</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium"><i class="fa-solid fa-images mr-2"></i> Campus Life</a>
+            <a href="#director" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium"><i class="fa-solid fa-user-tie mr-2"></i> Leadership</a>
+        </div>
+    </header>
+
+    <!-- Dynamic Hero Carousel Section -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-12">
+        <!-- Slide 1 -->
+        <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Modern Campus">
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Computer Lab">
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Students Collaborating">
+        </div>
+
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide">
+                        <i class="fa-solid fa-award"></i> Premier Educational Institute in Karachi
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Empowering Minds,<br>
+                        <span class="gradient-text">Building Future Leaders</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+    Welcome to South City College & SCIMT. Delivering high-caliber Intermediate, Higher BS Degrees, and DAE Technical Programs across Karachi at our two premier locations: <strong class="text-amber-400">Shahrah-e-Faisal</strong> and <strong class="text-amber-400">H.E.F. Hussainabad Campus</strong>.
+</p>
+                    
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <button onclick="toggleModal()" class="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl shadow-xl shadow-amber-500/20 hover:scale-[1.02] transition duration-200">
+                            Apply For Admissions 2026
+                        </button>
+                        <a href="#programs" class="px-8 py-4 bg-slate-900/80 hover:bg-slate-800 text-white font-semibold rounded-xl border border-white/20 hover:border-white/40 backdrop-blur-md transition duration-200 flex items-center gap-2">
+                            Explore Programs <i class="fa-solid fa-arrow-down text-xs text-amber-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Highlights Badge Row -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-xl">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white counter" data-target="25">0</p>
+                            <p class="text-xs text-slate-400 font-medium">Years Excellence</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-amber-400 counter" data-target="100">0</p>
+                            <p class="text-xs text-slate-400 font-medium">% Qualified Faculty</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400 counter" data-target="15">0</p>
+                            <p class="text-xs text-slate-400 font-medium">Specialized Labs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Quick Feature Card -->
+                <div class="lg:col-span-12 hidden lg:block">
+                    <div class="glass-card-dark p-8 rounded-3xl space-y-6 shadow-2xl relative overflow-hidden group">
+                        <div class="absolute -right-12 -top-12 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Modern IT Infrastructure</h3>
+                                <p class="text-xs text-slate-400">Individual High-Spec PCs for Every Student</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Our air-conditioned modern computer laboratories feature high-speed optical fiber internet, updated development software, and individual workstations.
+                        </p>
+                        <div class="bg-slate-900/80 rounded-2xl p-4 border border-white/5 space-y-2 text-xs">
+                            <div class="flex justify-between text-slate-300">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>BIEK Affiliated Curriculum</span>
+                                <span class="text-emerald-400 font-semibold">100%</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Merit Scholarships Offered</span>
+                                <span class="text-emerald-400 font-semibold">Available</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Two Prime Locations (Shahra-e-Faisal & Hussainabad)</span>
+                                <span class="text-emerald-400 font-semibold">Accessible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights / Stats Ribbon -->
+    <section id="about" class="bg-slate-900 border-y border-white/10 py-12 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-amber-500/40 transition group">
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="text-slate-100 font-bold">Approved & Recognized</h4>
+                    <p class="text-xs text-slate-400 mt-1">BIEK & Govt of Sindh Literacy Dept</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-amber-500/40 transition group">
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h4 class="text-slate-100 font-bold">Dedicated PCs</h4>
+                    <p class="text-xs text-slate-400 mt-1">1:1 Student Computer Ratio in Practical Labs</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-amber-500/40 transition group">
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h4 class="text-slate-100 font-bold">Financial Assistance</h4>
+                    <p class="text-xs text-slate-400 mt-1">Merit & Need-Based Scholarships Available</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-amber-500/40 transition group">
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h4 class="text-slate-100 font-bold">Central Location</h4>
+                    <p class="text-xs text-slate-400 mt-1">PECHS Block 6, Shahrah-e-Faisal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Explorer Section -->
+    <section id="programs" class="py-24 px-4 sm:px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-3.5 py-1.5 rounded-full">Academic Excellence</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Explore Our Degree & Diploma Programs</h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Tailored curricula crafted to empower students with technical acumen, academic mastery, and career readiness.
+                </p>
+                
+                <!-- Category Tabs -->
+                <div class="flex justify-center flex-wrap gap-2 pt-6">
+                    <button onclick="switchTab('inter')" id="tab-inter" class="tab-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-book-open mr-2"></i> Intermediate (FSc/FA/ICS)
+                    </button>
+                    <button onclick="switchTab('bs')" id="tab-bs" class="tab-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-900 text-slate-400 hover:text-white border border-white/10">
+                        <i class="fa-solid fa-graduation-cap mr-2"></i> BS Degree Programs
+                    </button>
+                    <button onclick="switchTab('dae')" id="tab-dae" class="tab-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-900 text-slate-400 hover:text-white border border-white/10">
+                        <i class="fa-solid fa-gears mr-2"></i> DAE Technical Diploma
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Contents -->
+
+            <!-- 1. Intermediate Programs -->
+            <div id="content-inter" class="program-content grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pre-Engineering -->
+                <div class="glass-card-dark p-6 rounded-2xl border border-white/10 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">2-Year Program</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Pre-Engineering</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Comprehensive coverage of Physics, Chemistry, and Advanced Mathematics preparing students for engineering universities.
+                        </p>
+                    </div>
+                    <button onclick="openProgramDetails('Pre-Engineering', 'Covers Physics, Chemistry, and Advanced Mathematics under BIEK curriculum. Includes practical lab work and entry test guidance.')" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold transition border border-white/10">
+                        View Curriculum
+                    </button>
+                </div>
+
+                <!-- Pre-Medical -->
+                <div class="glass-card-dark p-6 rounded-2xl border border-white/10 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-dna"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">2-Year Program</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Pre-Medical</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Focused studies in Biology, Chemistry, and Physics designed for future medical professionals and bio-scientists.
+                        </p>
+                    </div>
+                    <button onclick="openProgramDetails('Pre-Medical', 'Covers Botany, Zoology, Organic Chemistry, and Physics. Fully equipped biology and chemistry laboratories.')" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold transition border border-white/10">
+                        View Curriculum
+                    </button>
+                </div>
+
+                <!-- Computer Science (ICS) -->
+                <div class="glass-card-dark p-6 rounded-2xl border border-white/10 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">2-Year Program</span>
+                        <h3 class="text-xl font-bold text-white mt-1">ICS (Computer Science)</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Combines Computer Science, Physics, and Mathematics to create a strong technical base for IT degree paths.
+                        </p>
+                    </div>
+                    <button onclick="openProgramDetails('ICS (Computer Science)', 'Includes C++ programming fundamentals, Database concepts, Hardware architecture, and Applied Mathematics.')" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold transition border border-white/10">
+                        View Curriculum
+                    </button>
+                </div>
+
+                <!-- Commerce -->
+                <div class="glass-card-dark p-6 rounded-2xl border border-white/10 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">2-Year Program</span>
+                        <h3 class="text-xl font-bold text-white mt-1">I.Com (Commerce)</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Accounting, Principles of Commerce, Banking, and Economics for future finance and business leaders.
+                        </p>
+                    </div>
+                    <button onclick="openProgramDetails('I.Com (Commerce)', 'Specialized training in Financial Accounting, Business Statistics, Commercial Geography, and Banking.')" class="mt-6 w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold transition border border-white/10">
+                        View Curriculum
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. BS Degree Programs -->
+            <div id="content-bs" class="program-content hidden grid md:grid-cols-3 gap-6">
+                <!-- BSCS -->
+                <div class="glass-card-dark p-8 rounded-2xl border border-white/10 hover:border-amber-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400">4-Year Degree (8 Semesters)</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">BS Computer Science</h3>
+                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+                        In-depth training in Software Engineering, Web Development, AI, Data Structures, Algorithms, and Cloud Computing.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Full Stack Development Labs</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Industry Capstone Projects</li>
+                    </ul>
+                </div>
+                <!-- BBA -->
+                <div class="glass-card-dark p-8 rounded-2xl border border-white/10 hover:border-amber-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400">4-Year Degree (8 Semesters)</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">BS Business Admin (BBA)</h3>
+                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+                        Covers Marketing, Corporate Finance, Human Resource Management, Entrepreneurship, and Supply Chain.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Corporate Mentorship</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Internship Placement Program</li>
+                    </ul>
+                </div>
+                <!-- BS Software Engineering -->
+                <div class="glass-card-dark p-8 rounded-2xl border border-white/10 hover:border-amber-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400">4-Year Degree (8 Semesters)</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">BS Software Engineering</h3>
+                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+                        Focuses on software architecture, quality assurance, DevOps, mobile app development, and agile project management.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Agile & DevOps Workflows</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i>Real-world Software Testing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. DAE Programs -->
+            <div id="content-dae" class="program-content hidden grid md:grid-cols-2 gap-6">
+                <div class="glass-card-dark p-8 rounded-2xl border border-white/10 flex gap-6 items-start">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-amber-400 uppercase">3-Year Technical Diploma</span>
+                        <h3 class="text-xl font-bold text-white mt-1">DAE Electrical & Electronics</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Practical training in electrical circuits, industrial automation, control systems, power electronics, and wiring.
+                        </p>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-8 rounded-2xl border border-white/10 flex gap-6 items-start">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-amber-400 uppercase">3-Year Technical Diploma</span>
+                        <h3 class="text-xl font-bold text-white mt-1">DAE Computer Technology</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Focuses on computer hardware maintenance, networking engineering, server administration, and cybersecurity basics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                    
+    <!-- Campus Life & Interactive Gallery Section -->
+    <section id="gallery" class="py-24 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-3.5 py-1.5 rounded-full">Vibrant Campus Environment</span>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Campus Life & World-Class Facilities</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2">Glance inside South City College and SCIMT's state-of-the-art infrastructure.</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex justify-center gap-3 mb-8 flex-wrap">
+                <button onclick="filterGallery('all')" class="gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-amber-500 text-slate-950">All Photos</button>
+                <button onclick="filterGallery('labs')" class="gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white border border-white/10">IT Computer Labs</button>
+                <button onclick="filterGallery('campus')" class="gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white border border-white/10">Campus Infrastructure</button>
+                <button onclick="filterGallery('events')" class="gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white border border-white/10">Student Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item labs group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Lab">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">IT Laboratory</span>
+                        <h4 class="text-base font-bold text-white">Modern Computer Labs</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item campus group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Library">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">Knowledge Center</span>
+                        <h4 class="text-base font-bold text-white">Resource Library</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item events group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="Convo.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Convocation">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">Ceremonies</span>
+                        <h4 class="text-base font-bold text-white">Annual Convocation</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item labs group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="Lab.avif" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Coding Workstations">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">Hands-on Tech</span>
+                        <h4 class="text-base font-bold text-white">Individual PC Stations</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item campus group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Collaboration">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">Student Lounge</span>
+                        <h4 class="text-base font-bold text-white">Discussion Spaces</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item events group relative overflow-hidden rounded-2xl h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Seminars">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold text-amber-400 uppercase">Auditorium</span>
+                        <h4 class="text-base font-bold text-white">Guest Speaker Workshops</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership / Director's Message Section -->
+    <section id="director" class="py-24 bg-slate-900 border-t border-white/10 px-4 sm:px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card-dark p-8 sm:p-12 rounded-3xl border border-white/10 grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Director Photo -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/30 shadow-2xl">
+                        <img src="President.png" class="w-full h-auto object-cover" alt="Director Syed Sohail Aslam">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-2xl font-bold text-white">Syed Sohail Aslam</h3>
+                            <p class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Director & Academic Visionary</p>
+                        </div>
+                    </div>
+                    <!-- Badge -->
+                    <div class="absolute -bottom-4 -right-4 bg-amber-500 text-slate-950 p-4 rounded-2xl font-extrabold text-xs shadow-xl hidden sm:block">
+                        <i class="fa-solid fa-quote-left text-xl block mb-1"></i> Leadership Vision
+                    </div>
+                </div>
+
+                <!-- Message Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-3.5 py-1.5 rounded-full">Director's Welcome</span>
+                    <h2 class="text-3xl font-extrabold text-white leading-tight">
+                        "Steering Students Towards Academic Brilliance & Career Leadership"
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed italic">
+                        "It gives me immense pleasure that you have selected South City College and SCIMT for your academic journey. In today's hyper-competitive world, quality education coupled with practical technological skills is the greatest asset an individual can possess."
+                    </p>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Our institution takes pride in offering an enriched academic environment on Shahrah-e-Faisal, featuring top-grade faculty, modern practical computer facilities, and disciplined grooming tailored to meet modern industry demands.
+                    </p>
+                    <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-bold text-white">South City College & SCIMT</p>
+                            <p class="text-xs text-slate-400">Karachi, Pakistan</p>
+                        </div>
+                        <button onclick="toggleModal()" class="px-6 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl transition">
+                            Connect With Admissions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-white/10 pt-16 pb-12 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+            <!-- Col 1: About -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <img src="logo.png" alt="South City Logo" class="h-10 w-auto object-contain">
+                    <span class="text-lg font-bold text-white">SOUTH CITY <span class="text-amber-400">COLLEGE</span></span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Affiliated with BIEK and approved by Sindh Govt Literacy Dept. Providing excellence in Intermediate, BS Degrees, and DAE technical streams.
+                </p>
+                <div class="flex gap-3">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-400 transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-400 transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-400 transition"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-xs text-slate-400">
+                    <li><a href="#about" class="hover:text-amber-400 transition"><i class="fa-solid fa-chevron-right text-[9px] text-amber-400 mr-2"></i>About SCIMT</a></li>
+                    <li><a href="#programs" class="hover:text-amber-400 transition"><i class="fa-solid fa-chevron-right text-[9px] text-amber-400 mr-2"></i>Intermediate Programs</a></li>
+                    <li><a href="#programs" class="hover:text-amber-400 transition"><i class="fa-solid fa-chevron-right text-[9px] text-amber-400 mr-2"></i>BS Degree Programs</a></li>
+                    <li><a href="#calculator" class="hover:text-amber-400 transition"><i class="fa-solid fa-chevron-right text-[9px] text-amber-400 mr-2"></i>Admission / Certification</a></li>
+                    <li><a href="#gallery" class="hover:text-amber-400 transition"><i class="fa-solid fa-chevron-right text-[9px] text-amber-400 mr-2"></i>Campus Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact Info -->
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact Us</h4>
+                <ul class="space-y-3 text-xs text-slate-400">
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-location-dot text-amber-400 text-sm mt-0.5"></i>
+                        <span>50-M, Block-6, P.E.C.H.S., Shahrah-e-Faisal, Near Nursery Bus Stop, Karachi.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-phone text-amber-400 text-sm mt-0.5"></i>
+                        <span>(021) 34545452</span>
+                    </li>
+<li class="flex gap-3">
+                        <i class="fa-solid fa-location-dot text-amber-400 text-sm mt-0.5"></i>
+                        <span>H.E.F. Hussainabad Campus: Plot # ST 14/3, Karachi.</span>
+                    </li>
+                         
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-phone text-amber-400 text-sm mt-0.5"></i>
+                        <span>(0331) 0490904</span>
+                    </li>               
+<li class="flex gap-3">
+                        <i class="fa-solid fa-envelope text-amber-400 text-sm mt-0.5"></i>
+                        <span>info@southcity.edu.pk</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Campus Map Placeholder -->
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Campus Location</h4>
+                <div class="rounded-xl overflow-hidden border border-white/10 bg-slate-900 p-2 text-center">
+                    <div class="h-28 bg-slate-800 rounded-lg flex items-center justify-center text-slate-500 text-xs flex-col gap-2">
+                        <i class="fa-solid fa-map-location-dot text-2xl text-amber-400"></i>
+                        <span>Shahrah-e-Faisal, PECHS Block 6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 South City College & SCIMT. All Rights Reserved.</p>
+            <p>Designed with Excellence for Students in Karachi</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Online Admission Modal -->
+    <div id="admissionModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-white/20 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider bg-amber-500/10 px-2.5 py-1 rounded-full">Admissions 2026</span>
+                <h3 class="text-2xl font-bold text-white mt-2">Online Admission Inquiry</h3>
+                <p class="text-xs text-slate-400 mt-1">Fill out the form below. Our admission counselor will contact you within 24 hours.</p>
+            </div>
+
+            <form id="admissionForm" onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-semibold text-slate-300 mb-1">Student Full Name *</label>
+                    <input type="text" required placeholder="e.g. Muhammad Ali" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-400">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-300 mb-1">Phone / WhatsApp *</label>
+                        <input type="tel" required placeholder="03001234567" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-400">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-300 mb-1">Email Address</label>
+                        <input type="email" placeholder="name@domain.com" class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-400">
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-300 mb-1">Select Program Interested In</label>
+                    <select class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-400">
+                        <option>Intermediate Pre-Engineering</option>
+                        <option>Intermediate Pre-Medical</option>
+                        <option>Intermediate ICS (Computer Science)</option>
+                        <option>Intermediate I.Com (Commerce)</option>
+                        <option>BS Computer Science (BSCS)</option>
+                        <option>BS Business Administration (BBA)</option>
+                        <option>DAE Technical Diploma</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-300 mb-1">Comments / Questions</label>
+                    <textarea rows="3" placeholder="Ask about fee structures, bus routes, or scholarship requirements..." class="w-full bg-slate-950 border border-white/10 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-400"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl shadow-lg shadow-amber-500/20 text-xs uppercase tracking-wider transition">
+                    Submit Application
+                </button>
+            </form>
+
+            <div id="formSuccess" class="hidden text-center py-8 space-y-3">
+                <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-3xl mx-auto">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white">Inquiry Submitted Successfully!</h4>
+                <p class="text-xs text-slate-300">Thank you for reaching out to South City College. Our representative will get in touch shortly.</p>
+                <button onclick="toggleModal()" class="mt-4 px-6 py-2 bg-slate-800 text-white rounded-xl text-xs font-semibold">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curriculum Details Modal -->
+    <div id="detailsModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-white/20 rounded-3xl max-w-md w-full p-6 relative shadow-2xl space-y-4">
+            <button onclick="closeProgramDetails()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-2xl font-bold text-amber-400" id="detailTitle">Program Overview</h3>
+            <p class="text-slate-300 text-xs leading-relaxed" id="detailBody"></p>
+            <button onclick="closeProgramDetails()" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-semibold">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Hero Carousel Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        
+        function rotateSlides() {
+            slides[currentSlide].classList.add('opacity-0');
+            slides[currentSlide].classList.remove('opacity-100');
+            
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            slides[currentSlide].classList.remove('opacity-0');
+            slides[currentSlide].classList.add('opacity-100');
+        }
+        setInterval(rotateSlides, 5000);
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('#about');
+            if (!section) return;
+            const pos = section.getBoundingClientRect().top;
+            if (pos < window.innerHeight && !animated) {
+                animated = true;
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const speed = target / 30;
+                    const updateCount = () => {
+                        count += speed;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count);
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        });
+
+        // Tab Switcher
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = 'tab-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-900 text-slate-400 hover:text-white border border-white/10';
+            });
+            document.querySelectorAll('.program-content').forEach(c => c.classList.add('hidden'));
+
+            const activeBtn = document.getElementById(`tab-${tab}`);
+            activeBtn.className = 'tab-btn px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20';
+            
+            document.getElementById(`content-${tab}`).classList.remove('hidden');
+        }
+
+        // Admission Calculator
+        function calculateFee() {
+            const prog = document.getElementById('calcProgram').value;
+            const pct = parseFloat(document.getElementById('calcPercentage').value) || 0;
+            const isScholarship = document.getElementById('calcScholarship').checked;
+
+            let admission = 10000;
+            let tuition = 6500;
+
+            if (prog.startsWith('bs')) {
+                admission = 15000;
+                tuition = 12500;
+            }
+
+            let discountPct = 0;
+            if (isScholarship) {
+                if (pct >= 85) discountPct = 40;
+                else if (pct >= 75) discountPct = 25;
+                else if (pct >= 65) discountPct = 10;
+            }
+
+            const netTuition = tuition - (tuition * (discountPct / 100));
+
+            document.getElementById('outAdmission').innerText = `PKR ${admission.toLocaleString()}`;
+            document.getElementById('outTuition').innerText = `PKR ${tuition.toLocaleString()}`;
+            document.getElementById('outDiscount').innerText = `${discountPct}% Off`;
+            document.getElementById('outTotal').innerText = `PKR ${netTuition.toLocaleString()}`;
+
+            const elBox = document.getElementById('outEligibility');
+            if (pct >= 50) {
+                elBox.className = 'p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[11px] text-emerald-300 leading-relaxed';
+                elBox.innerText = `✅ Status: Eligible for Admission (${pct}% score met standard criteria).`;
+            } else {
+                elBox.className = 'p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-300 leading-relaxed';
+                elBox.innerText = `⚠️ Status: Conditional Admission subject to interview assessment.`;
+            }
+        }
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            document.querySelectorAll('.gallery-filter').forEach(btn => {
+                btn.className = 'gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-400 hover:text-white border border-white/10';
+            });
+            event.target.className = 'gallery-filter px-4 py-1.5 rounded-full text-xs font-semibold bg-amber-500 text-slate-950';
+        }
+
+        // Modal Controls
+        function toggleModal() {
+            const modal = document.getElementById('admissionModal');
+            modal.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openProgramDetails(title, body) {
+            document.getElementById('detailTitle').innerText = title;
+            document.getElementById('detailBody').innerText = body;
+            document.getElementById('detailsModal').classList.remove('hidden');
+        }
+
+        function closeProgramDetails() {
+            document.getElementById('detailsModal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('admissionForm').classList.add('hidden');
+            document.getElementById('formSuccess').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
