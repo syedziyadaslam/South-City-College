@@ -874,5 +874,29 @@
             document.getElementById('formSuccess').classList.remove('hidden');
         }
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll('[data-target]');
+        
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 1000; // 1 second mein counting mukammal ho jayegi
+            const increment = target / (duration / 16); 
+            
+            let count = 0;
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            
+            updateCount();
+        });
+    });
+</script>
 </body>
 </html>
